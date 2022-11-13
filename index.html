@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play to Earn Blockchain game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <h1 class="title">Web3Bridge Students Play to Earn</h1>
+    <div class="main">
+        <div class="form-container">
+            <form action="">
+                <div class="student-tier sub-container">
+                    <div class="student">
+                        <label for="student">Student Name:</label><br>
+                        <input type="text" id="student" placeholder="Ucheboy">
+                    </div>
+
+                    <div class="tier">
+                        <label for="car">Investment Tier:</label><br>
+                        <select name="" id="tier">
+                            <option value="silver">SILVER</option>
+                            <option value="gold">GOLD</option>
+                            <option value="platinum">PLATINUM</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="amt-date sub-container">
+                    <div class="amount">
+                        <label for="type">Amount</label><br>
+                        <select name="" id="amount">
+                            <option value="slv">10000</option>
+                            <option value="gld">20000</option>
+                            <option value="plt">30000</option>
+                        </select>
+                    </div>
+                    <div class="date">
+                        <label for="date">Investment Date</label><br>
+                        <input type="date" id="date">
+                    </div>
+                </div>
+                <div class="roi">
+                    <label for="entry">Expected ROI</label><br>
+                    <input type="text" id="roi" readonly placeholder="Expected Interest is #200, Expected withdrawal">
+                </div>
+                <div class="submit">
+                    <input type="submit" id="submit" value="SUBMIT">
+                </div>
+            </form>
+        </div>
+        <hr>
+        <div class="display-container">
+            <div class="display-table">
+                <h2 class="table-name">Enrolled Investors</h2>
+                <table class="enrolled">
+                    <tr class="display-header">
+                        <th class="name">Investor Name</th>
+                        <th class="tiers">Investment Tier</th>
+                        <th class="investment">Amount</th>
+                        <th class="inv-date">Investment Date</th>
+                        <th class="withdrawal-date">Withdrawal Date</th>
+                        <th class="withdrawal-amt">Total Withdrawal</th>
+                        <th class="action">Action</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
