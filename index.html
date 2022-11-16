@@ -13,7 +13,8 @@
 </head>
 
 <body>
-    <h1 class="title">Web3Bridge Students Play to Earn</h1>
+    <h1 class="title">Web3Bridge</h1>
+    <p class="sub-title">Student's Investment Entry Log</p>
     <div class="main">
         <div class="form-container">
             <form action="">
@@ -26,49 +27,45 @@
                     <div class="tier">
                         <label for="car">Investment Tier:</label><br>
                         <select name="" id="tier">
-                            <option value="silver">SILVER</option>
-                            <option value="gold">GOLD</option>
-                            <option value="platinum">PLATINUM</option>
+                            <option value="silver">SILVER = 10000</option>
+                            <option value="gold">GOLD = 20000</option>
+                            <option value="platinum">PLATINUM = 30000</option>
                         </select>
                     </div>
                 </div>
                 <div class="amt-date sub-container">
                     <div class="amount">
                         <label for="type">Amount</label><br>
-                        <select name="" id="amount">
-                            <option value="slv">10000</option>
-                            <option value="gld">20000</option>
-                            <option value="plt">30000</option>
-                        </select>
+                        <input type="number" name="" id="amount" placeholder="10000">
                     </div>
                     <div class="date">
                         <label for="date">Investment Date</label><br>
                         <input type="date" id="date">
                     </div>
                 </div>
-                <div class="roi">
-                    <label for="entry">Expected ROI</label><br>
-                    <input type="text" id="roi" readonly placeholder="Expected Interest is #200, Expected withdrawal">
-                </div>
+
                 <div class="submit">
-                    <input type="submit" id="submit" value="SUBMIT">
+                    <input type="submit" id="submit" value="INVEST">
                 </div>
             </form>
         </div>
         <hr>
+        <p class="interestDisplay"></p>
+        <hr>
+
         <div class="display-container">
+            <div class="savings-pool">
+                <div class="total-pooled">
+                    <p>Pool Total</p>
+                </div>
+                <div class="pool-display">
+                    <p class="totaled">0</p>
+                </div>
+            </div>
             <div class="display-table">
-                <h2 class="table-name">Enrolled Investors</h2>
-                <table class="enrolled">
-                    <tr class="display-header">
-                        <th class="name">Investor Name</th>
-                        <th class="tiers">Investment Tier</th>
-                        <th class="investment">Amount</th>
-                        <th class="inv-date">Investment Date</th>
-                        <th class="withdrawal-date">Withdrawal Date</th>
-                        <th class="withdrawal-amt">Total Withdrawal</th>
-                        <th class="action">Action</th>
-                    </tr>
+                <h2 class="table-name">Investment and Profit Details</h2>
+                <table id="newTable">
+
                 </table>
             </div>
         </div>

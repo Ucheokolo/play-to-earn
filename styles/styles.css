@@ -9,6 +9,7 @@ body {
 
 hr {
     width: 80%;
+    margin: 40px auto;
 }
 
 .form-container {
@@ -18,7 +19,14 @@ hr {
 
 .title {
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.sub-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 0;
 }
 
 form {
@@ -35,14 +43,15 @@ form {
 input,
 select {
     width: 20rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
 }
 
-#roi {
-    width: 100%;
-    height: 2.5rem;
-    border-radius: 10px;
-    font-size: 1.25rem;
+label {
+    font-size: 1.3rem;
 }
+
 
 .submit {
     margin: 20px auto;
@@ -50,12 +59,23 @@ select {
 }
 
 #submit {
-    height: 3rem;
+    border: solid 3px #fff;
+    width: 100%;
+    height: 4rem;
     border-radius: 8px;
-    background: rgb(238, 236, 246);
-    background: linear-gradient(90deg, rgba(238, 236, 246, 1) 0%, rgba(212, 212, 224, 0.7654320987654322) 35%, rgba(223, 242, 242, 0) 100%);
-    color: #ffff;
-    font-size: 1.2rem;
+    background-color: rgb(201, 201, 222);
+    cursor: pointer;
+    color: rgb(84, 84, 173);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#submit:hover {
+    color: rgb(6, 6, 113);
+}
+
+.interestDisplay {
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -63,6 +83,32 @@ select {
 /* enrolled investors section */
 .display-container {
     margin-top: 50px;
+}
+
+.savings-pool {
+    display: flex;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+
+}
+
+.pool-display {
+    background-color: #fff;
+    width: 60%;
+    color: #043473;
+    margin: auto;
+}
+
+.total-pooled {
+    width: 40%;
+    background-color: #043473;
+    color: #fff;
+    margin: auto;
+
+
 }
 
 table {
@@ -85,4 +131,36 @@ th {
     width: 15%;
     height: 2.5rem;
     font-size: 1.2rem;
+}
+
+/* annonymous error class */
+.errorClass {
+    background-color: rgb(246, 195, 195);
+}
+
+.roi-disp {
+    background-color: #DFF6FF;
+    color: #043473;
+    font-weight: 700;
+}
+
+.exit-date {
+    width: 80%;
+
+}
+
+.withdraw-button {
+    width: 80%;
+    border: solid 2px;
+    background: rgb(44, 32, 95);
+    cursor: pointer;
+    color: #ffff;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 780px) {
+    .sub-container {
+        display: block;
+        text-align: center;
+    }
 }
